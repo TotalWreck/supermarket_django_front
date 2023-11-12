@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Product List</h1>
+        <div class="row" id="product-list">
+        </div>
+        <div id="myCart" style="display: none;">
+            <h2>Cart</h2>
+            <ul id="cart-list" class="list-group"></ul>
+            <button class="btn btn-primary mt-2" onclick="emptyCart()">Empty Cart</button>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+    </div>
+</body>
+
+</html>
